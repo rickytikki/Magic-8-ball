@@ -1,0 +1,47 @@
+name = "R"
+Question = ""
+answer = ""
+import random
+
+random_number = random.randint(1, 10)
+
+# test print(random_number)
+
+if random_number >= 1 and random_number <= 10:
+  if random_number == 1:
+    answer = "Yes - definitely"
+  elif random_number == 2 :
+    answer = "It is decidedly so"
+  elif random_number == 3 :
+    answer = "Without a doubt"
+  elif random_number == 4 :
+    answer = "Reply hazy, try again"
+  elif random_number == 5 :
+     answer = "Ask again later"
+  elif random_number == 6 :
+     answer = "Better not tell you now"
+  elif random_number == 7 :
+     answer = "My sources say no"
+  elif random_number == 8 :
+     answer = "Outlook not so good"
+  elif random_number == 9 :
+    answer = "Very doubtful"
+  elif random_number == 10 :
+    answer = "Ehh, who knows"
+else:
+  answer = "ERROR"
+
+if len(name) == 0:
+  if len(Question) == 0:
+    print("No name and no question waste of time!")
+  else:
+    print("Question:", Question)
+else:
+  if len(Question) == 0:
+    print(name, "didn't ask anything...Weirdo")
+  else:
+    print(name, "asks:", Question)
+
+
+
+print("Magic 8-ball's answer:", answer)
